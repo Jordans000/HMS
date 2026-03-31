@@ -1,0 +1,84 @@
+/* Link Styles */
+a:link {
+    color: #555555;
+    text-decoration: none;
+}
+a:visited {
+    text-decoration: none;
+    color: #555555;
+}
+a:hover {
+    text-decoration: none;
+    color: #0066cc;
+}
+a:active {
+    text-decoration: none;
+}
+
+/* Button Styles */
+.btn-primary {
+    font-size: 16px;
+    background: #3498db;
+    border-radius: 5px;
+    color: aliceblue;
+    border: 0;
+    padding: 8px 16px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-family: Arial;
+}
+
+.btn-primary:hover {
+    background: #2980b9;
+    transform: scale(1.05);
+    box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+}
+
+.btn-outline {
+    font-size: 16px;
+    background: transparent;
+    border-radius: 5px;
+    color: #3498db;
+    border: 1px solid #3498db;
+    padding: 8px 16px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-family: Arial;
+}
+
+.btn-outline:hover {
+    background: #3498db;
+    color: white;
+    transform: scale(1.05);
+}
+	/* Footer Link Hover Effects */
+.footer-link {
+    transition: color 0.3s ease;
+}
+
+.footer-link:hover {
+    color: #3498db !important;
+    text-decoration: underline !important;
+}
+
+/* Smooth Scrolling */
+html {
+    scroll-behavior: smooth;
+    text-align: center;
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+    .top-bar td, .nav-table td {
+        display: block;
+        text-align: center;
+        padding: 5px;
+    }
+    .hero-title {
+        font-size: 32px !important;
+    }
+    img {
+        max-width: 100%;
+        height: auto;
+    }
+}
