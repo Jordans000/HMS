@@ -100,12 +100,12 @@ a:active {
   <p>
     <label for="textfield3"><span style="text-align: center;">First name:</span></label>
     <span style="text-align: center">
-      <input type="text" name="textfield" id="textfield3">
+      <input type="text" name="first_name" id="textfield3">
     </span> </p>
   <p>
     <label for="textfield4"><span style="text-align: center">Last name:</span></label>
     <span style="text-align: center">
-      <input type="text" name="textfield2" id="textfield4">
+      <input type="text" name="last_name" id="textfield4">
     </span></p>
   <p>
     <label for="date">D.O.B:</label>
@@ -129,7 +129,7 @@ Female </p>
   </p>
   <p>
     <label for="tel">Phone number:</label>
-    <input type="tel" name="tel" id="tel">
+    <input type="tel" name="phone" id="tel">
   </p>
   <p>
     <label for="tel">Emergency contact:</label>
@@ -214,7 +214,7 @@ Female </p>
       </table></td>
     </tr>
     <tr>
-      <td bgcolor="#2c3e50"><pre style="text-align: center; color: #bdc3c7;">© 2025 City Hospital. All rights reserved.</pre></td>
+      <td bgcolor="#2c3e50"><pre style="text-align: center; color: #bdc3c7;">© 2026 City Hospital. All rights reserved.</pre></td>
     </tr>
   </tbody>
 </table>
