@@ -1,4 +1,5 @@
 <?php
+echo "<pre>"; print_r($_POST); echo "</pre>";
 // 1. Connect to the WAMP database
 $conn = new mysqli("localhost", "root", "", "hospital_db");
 
@@ -11,7 +12,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $phone = $_POST['phone'];
 
     // 4. Send it to the MySQL database
-    $sql = "INSERT INTO Patients (First_Name, Last_Name, Phone) VALUES ('$fname', '$lname', '$phone')";
+    $sql = "INSERT INTO Patients (first_name, last_name, phone) VALUES ('$fname', '$lname', '$phone')";
     $conn->query($sql);
 }
 ?>
@@ -100,12 +101,12 @@ a:active {
   <p>
     <label for="textfield3"><span style="text-align: center;">First name:</span></label>
     <span style="text-align: center">
-      <input type="text" name="first_name" id="textfield3">
+      <input type="text"  id="textfield3" name="first_name" required>
     </span> </p>
   <p>
     <label for="textfield4"><span style="text-align: center">Last name:</span></label>
     <span style="text-align: center">
-      <input type="text" name="last_name" id="textfield4">
+      <input type="text"  id="textfield4" name="last_name" required>
     </span></p>
   <p>
     <label for="date">D.O.B:</label>
@@ -129,7 +130,7 @@ Female </p>
   </p>
   <p>
     <label for="tel">Phone number:</label>
-    <input type="tel" name="phone" id="tel">
+    <input type="tel"  id="tel" name="phone" required>
   </p>
   <p>
     <label for="tel">Emergency contact:</label>
